@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { SearchIcon, InformationCircleIcon, ClipboardListIcon } from '@heroicons/react/solid';
+import { FaSearch, FaInfoCircle, FaClipboardList } from 'react-icons/fa';
 
 export default function Home() {
   const [bin, setBin] = useState('');
@@ -29,7 +29,7 @@ export default function Home() {
             className="px-4 py-2 bg-blue-500 text-white rounded-r flex items-center"
             onClick={handleCheck}
           >
-            <SearchIcon className="h-5 w-5 mr-1" />
+            <FaSearch className="h-5 w-5 mr-1" />
             Check
           </button>
         </div>
@@ -44,7 +44,7 @@ export default function Home() {
 
       <section id="about" className="my-8">
         <h2 className="text-2xl font-bold flex items-center">
-          <InformationCircleIcon className="h-6 w-6 mr-1" />
+          <FaInfoCircle className="h-6 w-6 mr-1" />
           About
         </h2>
         <p>This BIN Checker allows you to easily check the Bank Identification Number (BIN) of your card to get detailed information about it.</p>
@@ -52,7 +52,7 @@ export default function Home() {
 
       <section id="features" className="my-8">
         <h2 className="text-2xl font-bold flex items-center">
-          <ClipboardListIcon className="h-6 w-6 mr-1" />
+          <FaClipboardList className="h-6 w-6 mr-1" />
           Features
         </h2>
         <ul className="list-disc list-inside">
@@ -64,7 +64,7 @@ export default function Home() {
 
       <section id="faq" className="my-8">
         <h2 className="text-2xl font-bold flex items-center">
-          <InformationCircleIcon className="h-6 w-6 mr-1" />
+          <FaInfoCircle className="h-6 w-6 mr-1" />
           FAQ
         </h2>
         <div className="mb-4">
