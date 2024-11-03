@@ -3,9 +3,18 @@
 import { useState } from 'react';
 import { FaSearch, FaInfoCircle, FaClipboardList } from 'react-icons/fa';
 
+type ResultType = {
+  scheme: string;
+  type: string;
+  country: {
+    name: string;
+    emoji: string;
+  };
+};
+
 export default function Home() {
   const [bin, setBin] = useState('');
-  const [result, setResult] = useState(null);
+  const [result, setResult] = useState<ResultType | null>(null);
 
   const handleCheck = async () => {
     const res = await fetch(`https://binlist.io/lookup/${bin}`);
