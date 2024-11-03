@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <div className="w-full max-w-4xl px-4">
-      <div className="my-8">
+      <div className="my-8 bg-white p-6 rounded shadow-md">
         <h1 className="text-3xl font-bold text-center">BIN Checker</h1>
         <div className="flex items-center mt-4">
           <input
@@ -42,7 +42,7 @@ export default function Home() {
         )}
       </div>
 
-      <section id="about" className="my-8">
+      <section id="about" className="my-8 bg-white p-6 rounded shadow-md">
         <h2 className="text-2xl font-bold flex items-center">
           <FaInfoCircle className="h-6 w-6 mr-1" />
           About
@@ -50,7 +50,7 @@ export default function Home() {
         <p>This BIN Checker allows you to easily check the Bank Identification Number (BIN) of your card to get detailed information about it.</p>
       </section>
 
-      <section id="features" className="my-8">
+      <section id="features" className="my-8 bg-white p-6 rounded shadow-md">
         <h2 className="text-2xl font-bold flex items-center">
           <FaClipboardList className="h-6 w-6 mr-1" />
           Features
@@ -62,7 +62,7 @@ export default function Home() {
         </ul>
       </section>
 
-      <section id="faq" className="my-8">
+      <section id="faq" className="my-8 bg-white p-6 rounded shadow-md">
         <h2 className="text-2xl font-bold flex items-center">
           <FaInfoCircle className="h-6 w-6 mr-1" />
           FAQ
